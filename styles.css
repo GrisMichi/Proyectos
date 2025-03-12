@@ -1,0 +1,66 @@
+*{
+    background: linear-gradient(rgb(66, 19, 12), rgb(252, 195, 217));
+    color: white;
+    font-family: "Indie Flower", cursive;
+    text-align: center;
+    text-decoration: none;    
+    margin: 0;
+}
+
+.principal{
+    border: 10px solid black;
+}
+
+.anclas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    border-radius: 25px;
+}
+
+.anclas img{
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.texto{
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 40px 0;
+}
+
+@media  (max-width: 800px) {
+    .anclas{
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+
+    .quiensoy img {
+        height: 35em;
+        padding-top: 150px;
+        padding-left: 0;
+    }
+
+}
+
+@media  (max-width: 500px) {
+    .anclas img{
+        width: 300px;
+        height: 300px;
+        border: 5px solid black;
+        border-radius: 5px;
+    }
+
+    .principal{
+        border: none;
+    }
+
+}

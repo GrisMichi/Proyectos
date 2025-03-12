@@ -1,0 +1,74 @@
+body{
+    background-color:rgb(250, 253, 255);
+}
+
+.principal{
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #DDDDDD;
+    padding: 20px;
+    max-width: 1000px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    margin: auto;
+    
+}
+
+.libro{
+    background-color:#F0F8FF;
+    border: 1px solid #3E9DDC;
+    border-radius: 10px;
+    margin: 20px;
+    color:#585665;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.nombre{
+    color: #1A5489;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.info{
+    background-color: #EAF2F8;
+    border: 1px solid #3E9DDC;
+    border-radius: 10px;
+    margin: 5px;
+    color:#585665;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 10px;
+}
+
+.enlace{
+        background-color: #FCF3CF;
+        border: 1px solid #F5D659;
+        border-radius: 10px;
+        margin: 20px;
+        color:#585665;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding: 10px;
+    }
+
+.TIT2{
+    color:#2984BD;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+a{
+    color: #C0392B;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    color:#D35400;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+hr{
+    background-color: #D35400;
+    border-color: #D35400;
+}
+

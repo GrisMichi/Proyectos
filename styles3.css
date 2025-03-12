@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.principal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.quiensoy {
+    display: flex;
+    flex-direction: row;
+    color: #343333;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiensoy img {
+    height: 40em;
+    padding-left: 100px;
+}
+
+.quiensoy p{
+    padding-right: 100px;
+}
+.quiensoy h2{
+    color: #FF5018;
+    font-size: 4rem;
+}
+
+.avatar {
+    background-color: #FF5018;
+    border-top: 1px solid #A74A2F;
+    border-bottom: 1px solid #A74A2F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 40px 10%;
+}
+
+.avatar img {
+    height: 10em;
+    border-radius: 50%;
+}
+
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.proyectos h2{
+    font-size: 4rem;
+    color: #343333;
+    text-align: center;
+    padding: 20px;
+}
+
+.proyecto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2%;
+    padding: 20px 60px 60px 40px;
+    margin:0 60px
+}
+
+.proy {
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    text-align: center;
+    color: #343333;
+    padding-bottom: 20px;
+}
+
+.proy h4{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color:#4D5167;
+}
+.proy p{
+    padding: 10px;
+    color: #4D5167; 
+}
+
+.proy img {
+    height: 200px;
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.barra {
+    position: fixed;
+    height: 50px;
+    background-color: #353841;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color:#ffffff;
+}
+
+.barra_gris{
+    color: #92999D;
+}
+
+.barra_texto, .barra_gris{
+    padding-right: 10px;
+}
+
+.barra_contenido {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: #FF5018;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #A74A2F;
+}
+
+.leermas {
+    height: 50px;
+    width: 90px;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%; 
+    background-color: #353841;
+    height: 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 100px;
+}
+
+
+@media  (max-width: 800px) {
+    .proyecto{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        margin:0
+    }
+
+    .quiensoy img {
+        height: 35em;
+        padding-top: 150px;
+        padding-left: 0;
+    }
+
+}
+
+@media  (max-width: 500px) {
+    .barra{
+        font-size: 20px;
+    }
+    
+    .quiensoy {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .quiensoy img{
+        padding-top: 50px;
+    }
+
+    .quiensoy h2{
+        text-align: center;
+    }
+
+    .quiensoy p{
+        text-align: center;
+        padding: 10px 100px 0;
+        font-size: 20px;
+    }
+
+    .leermas{
+        font-size: 20px;
+        margin: 0px 225px 50px;
+        width: 150px;
+        height: 60px;
+    }
+
+    .avatar{
+        font-size: 20px;
+    }
+
+    .proyecto{
+        display: grid;
+        grid-template-columns: 1fr; 
+        margin:0;
+        padding:20px 40px 150px 40px
+	}
+
+    .proy h4{
+        font-size: 35px;
+    }
+
+    .proy p{
+        font-size: 20px;
+    }
+
+    .proy button{
+        width: 150px;
+        font-size: 20px;
+    }
+
+    footer{
+        font-size: 20px;
+        text-align: right;
+    }
+}
