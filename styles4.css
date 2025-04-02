@@ -1,0 +1,444 @@
+body{
+    background-color: #B2D7F2;
+    
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Este es el contenedor principal para no andar de idiota y confundirlo */
+
+.principal{
+    width: 60%;
+    margin: 30px auto 40px;
+}
+
+
+/* la barra y cosas relacionadas */
+
+.barra{
+    background:linear-gradient(90deg, #536D7A 30%, #374850 60%);
+    background-color: #374850;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.barra img{
+    width: 150px;
+    height: 150px;
+}
+
+.pt1{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.nombre{
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column
+}
+
+.nombre h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.pt2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+}
+.divblanco {
+    background-color: white;
+    width: 1px; 
+    height: 155px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.divazul{
+    background-color:#819ED1;
+    height: 6px;
+    width: 100%;
+}
+
+
+/* auí inicia el contenido del currículum */
+
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 2.7fr;
+}
+
+.iconos{
+    height: 40px;
+    width: 40px;
+}
+
+/* sección gris */
+
+
+.gris {
+    background-color: #E7E8EA;
+    color: #565658;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px; 
+    padding-right: 30px;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    gap: 50px;
+}
+
+.gris img{
+    margin-right: 10px;
+}
+
+.barrasgris{
+    padding-left: 50px;
+}
+
+.skills {
+    margin-top: 30px; 
+}
+
+.titulos{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.titulos h3{
+    padding-top: 10px;
+}
+
+.expertise p, .skills p,.languages p{
+    font-weight: 500;
+}
+
+/* marcas */
+
+.marcaskills1, .marcaexpertise2, .marcaidioma3{
+    height: 15px;
+    width: 300px;
+    display: grid;
+    grid-template-columns:9fr 1fr;
+
+}
+
+.marcaskills2, .marcaexpertise3, .marcaidioma1{
+    height: 15px;
+    width: 300px;
+    display: grid;
+    grid-template-columns:6fr 4fr;
+}
+
+.marcaskills3, .marcaexpertise1, .marcaidioma2{
+    height: 15px;
+    width: 300px;
+    display: grid;
+    grid-template-columns:8fr 2fr;
+}
+
+
+.marcaidioma{
+    height: 15px;
+    width: 300px;
+    display: grid;
+    grid-template-columns:1fr;
+}
+
+/* colores de las barras, porque no sé de qué otra forma va xd */
+
+.amarillo{  
+    background-color: #FDCC89;
+}
+
+.azul{
+    background-color: #647498;
+}
+
+.celeste{
+    background-color: #7D9ED3;
+}
+
+.verde{
+    background-color: #8EC88B;
+}
+
+/* sección blanca */
+.blanco{
+    color:#565658;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    background-color: #FFFFFF;
+}
+
+.blanco p{
+    font-size: 12px;
+}
+
+.blanco h4{
+    font-size: 14px;
+}
+
+.degradado{
+    display: flex;
+    background:linear-gradient(90deg, #C9CACC 40%, #FFFFFF 60%);
+    padding: 5px 0px;
+    margin-top: 40px;
+}
+
+#num1{
+    margin-top: 30px;
+}
+
+#num2{
+    margin-top: 20px;
+}
+.degradado img{
+    margin-left: 5px;
+    object-fit: cover;
+}
+
+.degradado h3{
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.alineado{
+    padding-left: 95px;
+}
+
+.titulodeg{
+    display: flex;
+    gap: 10px;
+}
+
+.textoexp{
+    padding-left: 60px;
+    margin: 10px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #374850;
+    color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.contenidoft{
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    padding-left: 15px;
+
+}
+
+.textofooter{
+    padding-top: 10px;
+}
+
+#ft1{
+    padding-right: 70px;
+}
+
+#ft2{
+    padding-right: 40px;
+}
+
+
+/* responsividada (aiudaaaaaaaaa) */
+@media  (max-width: 1220px) {
+/* barra */
+.nombre{
+    padding-right: 5px;
+
+}
+
+.pt2{
+    padding-left: 5px;
+}
+
+.principal{
+    width: 70%;
+}
+/* sección gris */
+
+.gris{
+    padding-top: 60px;
+    gap: 150px;
+}
+.barrasgris p{
+    padding-top: 10px;
+}
+
+
+/* cambios a la sección blanca */
+.blanco{
+    padding-top: 50px;
+}
+
+.titulodeg{
+    display: flex;
+    flex-direction: column;
+}
+
+.textoexp{
+    padding-left: 40px;
+}
+
+.alineado{
+    padding-left: 0;
+}
+
+.textoexp p{
+    padding-bottom: 10px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #374850;
+    color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+.contenidoft{
+    gap: 10px;
+}
+
+#ft1{
+    padding-right: 0;
+}
+
+#ft2{
+    padding-right: 0;
+}
+}
+
+@media  (max-width: 800px) {
+ 
+/* odio la barra */
+
+.barra{
+    display: flex;
+    flex-direction: column;
+}
+
+.divblanco {
+    width: 200px; 
+    height: 1px; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: calc(100px + 50px + 50px);}
+
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+/* cambios a la gris */
+.gris{
+    padding-top: 0px;
+    padding-bottom: 30px;
+    gap: 40px;}
+
+.barrasgris{
+    padding-left: 0;
+}
+
+.barrasgris p{
+    padding-top: 0;
+    }
+    
+.marcaskills1, .marcaskills2, .marcaskills3, .marcaexpertise1, .marcaexpertise2, .marcaexpertise3, .marcaidioma1, .marcaidioma2, .marcaidioma3, .marcaidioma{
+    width: 100%;
+    }
+
+/*  cambios blancos
+ */
+.blanco{
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.textoexp p{
+    text-align: justify;
+    padding-bottom: 0;
+} 
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenidoft{
+    font-size:16px;
+    padding-left: 0;
+}
+}
+
+@media (max-width:550px){
+.principal{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pt1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombre{
+    padding-top: 5px;
+}
+
+.pt2{
+    padding-top: 20px;
+}
+
+.divblanco{
+    top: calc(100px + 110px + 50px)
+}
+}
+ 
+
+@media(max-width:320px){
+    .degradado img{
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .textoexp{
+        padding-left: 20px;
+    }
+}
