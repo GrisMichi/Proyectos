@@ -351,6 +351,10 @@ footer{
     flex-direction: column;
 }
 
+.barra h3{
+    margin-top:15px;
+}
+
 .divblanco {
     width: 200px; 
     height: 1px; 
@@ -358,7 +362,8 @@ footer{
     left: 50%; 
     transform: translateX(-50%); 
     top: calc(100px + 50px + 50px);
-    margin-top:10px;}
+    margin-top:10px;
+    margin-bottom:10px;}
 
 .contenido{
     display: grid;
