@@ -339,10 +339,13 @@ footer{
 }
 }
 
-@media  (max-width: 800px) {
+@media  (max-width: 890px) {
  
 /* odio la barra */
-
+.principal{
+    width:90%;
+}
+    
 .barra{
     display: flex;
     flex-direction: column;
@@ -354,7 +357,8 @@ footer{
     position: absolute; 
     left: 50%; 
     transform: translateX(-50%); 
-    top: calc(100px + 50px + 50px);}
+    top: calc(100px + 50px + 50px);
+    margin-top:10px;}
 
 .contenido{
     display: grid;
