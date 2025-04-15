@@ -6,6 +6,11 @@
 .principal{
     box-sizing: border-box;
 }
+
+.titu{
+    font-family:Impact;
+    font-weight:lighter;
+}
 /* -----------------PARTE SUPERIOR----------------------------------------------------------------- */
 .superior{
     background: url(/img_5/forma2.jpg);
@@ -23,11 +28,13 @@
     padding-top: 10px;
 }
 
+
 #paralcon{
     display: flex;
     gap: 5px;
     margin-left: 50px;
     font-size: 0.9rem;
+    padding-top: 5px;
 }
 
 #blanparal{
@@ -40,6 +47,9 @@
     padding-bottom: 60px;
 }
 
+.letreros h2{
+    font-size: 2.5rem;
+}
 
 .linea-corta{
     height: 20px;
@@ -104,7 +114,7 @@
 .gris{
     background-color: #F2F2F2;
     padding-left: 40px;
-    padding-right: 20px;
+    padding-right: 30px;
     border-right: 1px solid #e0e0e0;
     padding-top: 30px;
 }
@@ -114,6 +124,9 @@
     width: 20px;
 }
 
+.esp{
+    padding-bottom: 10px;
+}
 
 .busqueda{
     display: flex;
@@ -135,11 +148,17 @@
 .filter, .categories, .featured{
     padding-bottom: 60px;
 }
+
 .tachado{
     margin-right: 2px;
     text-decoration: line-through;
 
 }
+
+.linea{
+    margin-bottom: 20px;
+}
+
 .amarillo{
     background-color:#F5C113;
     width: 100%;
@@ -156,6 +175,10 @@
     width: 10px;
 }
 
+#centr{
+    align-self: center;
+}
+
 .categories ul{
     list-style: none;
     padding-left: 0;
@@ -164,10 +187,17 @@
 .categories ul li{
     display: flex;
     gap: 3px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .linea{
     display: flex;
+}
+
+.prd hr{
+    margin: 10px 0;
+    width: 100%;
 }
 
 .negro{
@@ -175,6 +205,7 @@
     height: 2px;
     border: none;
     background-color: black;
+    margin-bottom: 30px;
 }
 
 #imamin{
@@ -187,7 +218,7 @@
     background-color: #e9e9e9;
     height: 1px;
     border: none;
-    width: 250px;
+    width: 260px;
 }
 
 .textolet{
@@ -198,13 +229,14 @@
 /* ----------------PRODUCTOS----------------------- */
 .blanco {
     padding-left: 30px;
+    padding-right: 40px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 }
 
 .pag-prod{
-    padding-top: 60px;
+    padding-top: 60px
 
 }
 
@@ -214,9 +246,19 @@
     padding-bottom: 30px;
 }
 
-.results span{
+.sort{
+    display: flex;
+    justify-content: space-between;
     background-color: #E5E5E5;
     border: 1px solid #cfcfcf;
+    padding: 8px 8px 8px 5px;
+    width: 150px;
+}
+
+.sort img{
+    width: 10px;
+    height: 10px;
+    align-self: center;
 }
 .productos {
     width: 100%;
@@ -228,6 +270,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
+}
+
+.producto p{
+    margin-top: 20px;
 }
 
 #imaprod{
@@ -236,9 +283,10 @@
     margin: 5px;
     border: 1px solid #e9e9e9;
 }
+
 .star, .no-star, .star-no{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 .rojo{
@@ -257,18 +305,35 @@
 
 .valoracion{
     display: flex;
+    margin-top: 20px;
 }
 
 .mas{
     display: flex;
+    gap: 7px;
+    margin-bottom: 50px;
+    color: #9b9999;
 }
 
+.mas img{
+    width: 10px;
+    height: 10px;
+    align-self: center;
+}
+
+#ama{
+    background-color: #F5C113;
+    border: 1px solid #c79c0f;
+    color:#ffffff ;
+}
 .mas div{
     display: flex;
     height: 20px;
     width: 20px;
+    padding: 10px;
     justify-content: center;
-    background-color: #EEEEEE;
+    background-color: #E5E5E5;
+    border: 1px solid #cfcfcf;
 }
 /* -----------------------------------------FOOTER-------------------------------------------- */
 
@@ -277,21 +342,73 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     background-color: #2A2A2A;
-    color: white;
+    color:#868686;
+    padding:50px
+}
+
+footer h4{
+    color: #ffffff;
+}
+.informacion-empresa img{
+    margin-bottom: 5px;
+}
+
+.informacion-empresa hr{
+    border: none;
+    background-color: #4d575e;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.cifras p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.redes img{
+    width: 15px;
+    height: 15px;
+}
+
+.redes h4{
+    padding-bottom: 40px;
+}
+.inforedes{
+    padding-bottom: 30px;
+}
+
+.union{
+    display:flex;
+    gap:10px;
+}
+
+#alineado{
+    padding-left: 25px;
+}
+
+#grande{
+    font-size: 2rem;
+}
+
+.mensaje h4{
+    padding-bottom: 30px;
+}
+
+.mensaje p{
+    background-color: #252525;
+    margin-bottom:20px;
+    padding: 10px;
+}
+
+#mgr{
+    padding-bottom: 40px;
 }
 
 button{
     background-color: #F5C113;
-    border: #c79c0f;
+    border: 1px solid #c79c0f;
     border-radius: 2px;
     color: #ffffff;
-}
+    padding: 10px 20px 10px 20px;
 
-
-/* ...................MEDIA QUERIES..................... */
-
-@media  (max-width: 2666px) {
-    .pag-prod{
-        max-width: 1600px;
-    }
 }
