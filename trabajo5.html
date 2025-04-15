@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de herramientas</title>
-    <link rel="stylesheet" href=/styles5.css>
+    <link rel="stylesheet" href=/style.css>
 </head>
 <body>
     <main class="principal">
@@ -17,14 +17,14 @@
 
                     <section class="derecha">
                         <section class="texto-barra">
-                                <h4>HOME </h4>
-                                <h4>FEATURES</h4>
-                                <h4>ABOUT US</h4>
-                                <h4>OUR SERVICES</h4>
-                                <h4>PROJECTS</h4>
-                                <h4>BLOG</h4>
-                                <h4 id="amarillo">STORE</h4>
-                                <h4>CONTACT</h4>
+                                <h4 class="titu">HOME </h4>
+                                <h4 class="titu">FEATURES</h4>
+                                <h4 class="titu">ABOUT US</h4>
+                                <h4 class="titu">OUR SERVICES</h4>
+                                <h4 class="titu">PROJECTS</h4>
+                                <h4 class="titu">BLOG</h4>
+                                <h4 class="titu"id="amarillo">STORE</h4>
+                                <h4 class="titu">CONTACT</h4>
                         </section>
 
                         <section class="mas-opciones">
@@ -37,7 +37,7 @@
             </div>
 
             <div class="letreros">
-                <h2>STORE</h2>
+                <h2 class="titu">STORE</h2>
                 <div class="paral">
                     <div id="paralcon">
                         <p>
@@ -60,7 +60,7 @@
                         <img id="lupa" src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-magnifying-glass-line-icon-png-image_9015864.png" alt="lupa">
                     </div>
 
-                    <h3>FILTER BY PRICE</h3>
+                    <h3 class="titu esp">FILTER BY PRICE</h3>
                     <hr class="negro">
 
                     <div class="linea">
@@ -72,14 +72,14 @@
                     </div>
                     
                     <div class="textolet ">
-                        <p>Price: £12 - £35</p>
+                        <p id="centr">Price: £12 - £35</p>
                         <button>Filter</button>
                     </div>
 
                 </section>
 
                 <section class="categories">
-                    <h3>CATEGORIES</h3>
+                    <h3 class="titu esp">CATEGORIES</h3>
                     <hr class="negro">
                     <ul>
                         <li> Clothing <p class="gris-texto">(7)</p></li>
@@ -93,10 +93,10 @@
                 </section>
 
                 <section class="featured">
-                    <h3>FEATURED PRODUCTS</h3>
+                    <h3 class="titu esp">FEATURED PRODUCTS</h3>
                     <hr class="negro">
 
-                    <div class="textolet">
+                    <div class="prd">                    <div class="textolet">
                         <div> 
                             <p>Flying Ninja</p>
                             <div class="precio">
@@ -108,7 +108,7 @@
 
                     <hr id="gris">
                     
-                    <div class="textolet">
+                    <div class="textolet ">
                         <div>
                             <p>Patient Ninja</p>
                             <p class="rojo">£35.00</p>
@@ -124,9 +124,8 @@
                             <p class="rojo" >£20.00</p>
                         </div>
                         <img id="imamin" src="https://http2.mlstatic.com/D_NQ_NP_828790-MLU70084733725_062023-O.webp" alt="Premium">
-                   </div>
-                   
-                   <hr id="gris">
+                   </div></div>
+
 
                 </section>
             </div>
@@ -137,14 +136,18 @@
                     
                     <section class="results">
                         <p>Showing 1-9 of 10 results</p>
-                        <span>Deffault sorting</span>
+                        <div class="sort">
+                            <span>Deffault sorting</span>
+                            <img src="https://cdn-icons-png.flaticon.com/512/0/159.png" alt="trian">
+                        </div>
+
                     </section>
 
                     <section class="productos">
 
                         <div class="producto">
-                            <img id="imaprod" src=/img_5/Sale2.png alt="flying">
-                            <p>Flying Ninja</p>
+                            <img id="imaprod" src=/img_5/Sale1.png alt="flying">
+                            <p class="titu esp">Flying Ninja</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -165,7 +168,7 @@
 
                         <div class="producto">
                             <img id="imaprod" src="https://thumbs.dreamstime.com/b/martillo-rotatorio-en-el-fondo-blanco-63018397.jpg" alt="happy">
-                            <p>Happy Ninja</p>
+                            <p class="titu esp">Happy Ninja</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -185,7 +188,7 @@
 
                         <div class="producto">
                             <img id="imaprod" src="https://www.anuncioya.com/thumb/100465/img_A_775175485e9d624e1070d5f37ba46bd236ee58.jpg" alt="happy">
-                            <p>Happy Ninja</p>
+                            <p class="titu esp">Happy Ninja</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -204,7 +207,7 @@
 
                         <div class="producto">
                             <img id="imaprod" src="https://ferreteriacalzada.mx/wp-content/uploads/2021/09/HC100603.jpg" alt="shilhouette">
-                            <p>Ninja Shilhouette</p>
+                            <p class="titu esp">Ninja Shilhouette</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -224,7 +227,7 @@
 
                         <div class="producto">
                             <img id="imaprod" src="https://http2.mlstatic.com/D_NQ_NP_916105-MCO75525798486_042024-O.webp" alt="shilhouette">
-                            <p>Ninja Shilhouette</p>
+                            <p class="titu esp">Ninja Shilhouette</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -245,7 +248,7 @@
 
                         <div class="producto">
                             <img id="imaprod" src="https://mobileimages.lowes.com/productimages/5a17bdc6-34b2-41f2-ae6c-56c70bc4e2c7/00434150.jpg?size=pdhism" alt="patient">
-                            <p>Patient Ninja</p>
+                            <p class="titu esp">Patient Ninja</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -265,7 +268,7 @@
 
                         <div class="producto">
                             <img id="imaprod" src="https://m.media-amazon.com/images/I/51rcaSHudeL._AC_UF894,1000_QL80_.jpg" alt="premium">
-                            <p>Premium Quality</p>
+                            <p class="titu esp" >Premium Quality</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -283,7 +286,7 @@
 
                         <div class="producto">
                             <img id="imaprod" src=/img_5/Sale2.png alt="premium">
-                            <p>Premium Quality</p>
+                            <p class="titu esp" >Premium Quality</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -305,7 +308,7 @@
 
                         <div class="producto">
                             <img id="imaprod" src="https://static-data2.manualslib.com/product-images/a9c/451661/dewalt-dc330-cordless-saw.jpg" alt="ship">
-                            <p>Ship your idea</p>
+                            <p class="titu esp" >Ship your idea</p>
                             <hr id="gris">
 
                             <div class="valyprecio">
@@ -324,51 +327,85 @@
                 </section>
 
                 <section class="mas">
-                    <div> 1 </div>
-                    <div> 2</div>
-                    <div> -> </div>
+                    <div id="ama"> <p>1</p> </div>
+                    <div> <p>2</p></div>
+                    <div> <img src="https://static.vecteezy.com/system/resources/previews/009/351/321/non_2x/arrow-icon-arrows-sign-black-arrows-free-png.png" alt="arrow"> </div>
                 </section>
 
                 </div>
         </section>
 
         <footer>
+
             <section class="informacion-empresa">
                 <img src=/img_5/forma5.jpeg alt="logo">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ex odit molestias neque doloremque quam harum illo, dolorum quisquam quis enim fugiat.</p>
                 
+                <hr>
+
                 <div class="cifras textolet">
                     <div>
-                        <p>366119</p>
+                        <p id="grande">366119</p>
                         <p>Happy clients</p> 
                     </div>
                             
                     <div>
-                        <p>181920</p>
+                        <p id="grande">181920</p>
                         <p>Projects launch</p>
                     </div>
                 </div>
             </section>
 
             <section class="redes">
-                <p>FIND US AT</p>
-                <P>Head quarters:</P>
-                <P>66 Nicholson street buffalo New York US 14214</P>
-                <p>00-123-456-7890</p>
-                <p>suppourt@linetthemes.com</p>
-                <p>00-123-456-7890</p>
-                <p>suppourt@linetthemes.com</p>
-                <p>Monday-Saturday: 8:00 am - 18:00 pm</p>
-                <p>Sunday:Closed</p>
+                <h4 class="titu">FIND US AT</h4>
+
+                <section class="inforedes">
+                    <P>Head quarters:</P>
+                    <P>66 Nicholson street buffalo New York US 14214</P> 
+                </section>
+
+                <section class="inforedes">
+                    <div class="union">
+                        <img src="https://cdn-icons-png.freepik.com/256/455/455705.png" alt="phone">
+                        <p>00-123-456-7890</p>
+                    </div>
+
+                    <div class="union">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6244/6244710.png" alt="mail">                
+                        <p>suppourt@linetthemes.com</p>
+                    </div>
+                </section>
+
+                <section class="inforedes">
+                    <div  class="union">
+                        <img src="https://cdn-icons-png.freepik.com/256/455/455705.png" alt="phone">
+                        <p>00-123-456-7890</p>
+                    </div>
+
+                    <div  class="union">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6244/6244710.png" alt="mail">
+                        <p>suppourt@linetthemes.com</p>   
+                    </div>     
+                </section>
+
+                <section class="inforedes">
+                    <div class="union">
+                        <img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt="dates">
+                        <p>Monday-Saturday: 8:00 am - 18:00 pm</p>
+                    </div>
+                    <p id="alineado">Sunday:Closed</p>
+                </section>
+
             </section>
 
             <section class="mensaje">
-                <p>SENT MESSAGE</p>
+                <h4 class="titu">SENT MESSAGE</h4>
                 <p>Name</p>
                 <P>Mail</P>
-                <p>Message</p>
+                <p id="mgr">Message</p>
                 <button>Sent Message</button>
             </section>
+            
         </footer>
     </main>
 </body>
