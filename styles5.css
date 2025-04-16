@@ -412,3 +412,230 @@ button{
     padding: 10px 20px 10px 20px;
 
 }
+
+/* ...................MEDIA QUERIES..................... */
+
+@media  (max-width: 1220px) {
+
+    #imaprod{
+        width: 150px;
+        height: 150px;
+    }
+
+    .pag-prod{
+        max-width: 700px;
+    }
+}
+
+@media  (max-width: 1150px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #imaprod{
+        width: 200px;
+        height: 200px;
+    }
+
+    .texto-barra{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media  (max-width: 950px) {
+    #logo{
+        width:135.05px;
+        height: 30px;
+    }
+
+    .pag-prod{
+        max-width: 400px;
+    }
+
+    #imaprod{
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+@media  (max-width: 880px) {
+
+    .barra {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    #logo{
+        width:135.05px;
+        height: 30px;
+    }
+
+    .medio{
+        display: grid;
+        grid-template-columns: 1fr;}
+
+
+    #esquina{
+        height: 0;
+        width: 0;
+    }
+    }
+
+@media  (max-width: 700px) {
+
+    .barra{
+        width: 100%;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .mensaje{
+        align-self: center;
+    }
+}
+
+@media  (max-width: 620px) {
+    .texto-barra{
+        padding-top: 10px;
+    }
+
+    .derecha{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media  (max-width: 550px) {
+
+    .texto-barra{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #logo{
+        width: 270.094px;
+        height: 60px;
+    }
+
+    .pag-prod{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .mas{
+        align-self: center;
+    }
+    .texto-barra{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .texto-barra{
+        font-size: 1rem;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .producto{
+        align-items: center;
+    }
+
+    .valyprecio{
+        display: flex;
+        gap: 10px;
+    }
+
+    #imaprod{
+        width: 250px;
+        height: 250px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+}
+
+@media  (max-width: 390px) {
+
+    .logoft{
+        width: 231px;
+        height: 34px;
+
+    }
+
+    #imaprod{
+        width: 200px;
+        height: 200px;
+    }
+
+    .gris{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none  ;
+    }
+
+    .blanco{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pag-prod{
+        padding:40px 0 0 0;
+    }
+
+    .results{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media  (max-width: 375px) {
+
+    .texto-barra{
+        font-size: 0.7rem;
+    }
+    #imaprod{
+        width: 150px;
+        height: 150px;
+    }
+
+    .productos{
+        width: 300px;
+    }
+
+    .pag-prod{
+        width: 300px;
+    }
+    .producto{
+        width: 300px;
+    }
+
+    #gris{
+        width: 200px;
+    }
+
+    .blanco{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+
