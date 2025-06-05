@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Actualizar el nombre y la imagen del Pokémon
     document.getElementById("name").textContent = res.data.name.toUpperCase();
-    document.getElementById("pokemon").src = res.data.sprites.other.home.front_default;
+    document.getElementById("pokemon").src = res.data.sprites.other.showdown.front_default;
+    document.getElementById("peso").textContent = `${res.data.weight} kg`;
+    document.getElementById("altura").textContent = `${res.data.height} cm`;
     document.getElementById("minipoke").src = res.data.sprites.front_default;
 
 
@@ -42,10 +44,8 @@ if (types.length === 1) {
     const damageFrom = typeInfo.data.damage_relations.double_damage_from; // Acceder correctamente a damage_relations
     // Usar forEach para agregar botones de debilidades
     damageFrom.forEach((item, index) => {
-        if (index < 2) { // Limitar a las dos primeras debilidades
             document.getElementById("deb").innerHTML += `
                     <button id="boton_debilidad" style="background-color:var(--${item.name})">${item.name}</button>`;
-        }
     });
 
 

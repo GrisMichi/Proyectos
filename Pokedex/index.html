@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokecard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Hanalei+Fill&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <div>
-            <img id="pokemonlogo" src="https://crisgon.github.io/pokedex/src/images/logo.png" alt="pokemonlogo" width="200px" height="100px">
+            <img id="pokemonlogo" src="https://crisgon.github.io/pokedex/src/images/logo.png" alt="pokemonlogo"
+                width="200px" height="100px">
         </div>
         <div>
             <img id="minipoke" src="" alt="">
         </div>
     </nav>
-    <main>
+    <div class="principal">
         <section id="tarjeta_principal">
-                <h3 id="name"></h4>
+            <h3 id="name"></h3>
                 <img id="pokemon" src="" alt="">
                 <div class="peso-altura">
                     <h4 id="peso"></h4>
@@ -26,7 +34,7 @@
         </section>
 
         <section id="tipos">
-            <div class="">
+            <div class="botones">
                 <h1 id="num_pokemon"></h1>
                 <div>
                     <h3>Tipo de pokemon</h3>
@@ -83,12 +91,13 @@
                     <div class="status-bar-color"></div>
                 </div>
             </div>
-            
+
         </div>
-    </main>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 
 </body>
+
 </html>

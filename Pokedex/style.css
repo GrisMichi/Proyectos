@@ -1,40 +1,50 @@
 /* : Lucha, Normal, Planta, Psíquico, Roca, Siniestro, Tierra, Veneno, Volador,  */
 :root {
-    --steel: rgb(150, 150, 170); 
-    --water: rgb(100, 149, 237);  
-    --bug: rgb(100, 130, 100);    
-    --dragon: rgb(200, 100, 100); 
-    --electric: rgb(255, 255, 150); 
-    --ghost: rgb(150, 120, 120);  
-    --fire: rgb(255, 165, 80);    
-    --fairy: rgb(230, 100, 150);  
-    --ice: rgb(180, 180, 230);     
-    --fighting: rgb(150, 50, 50);  
-    --normal: rgb(150, 150, 150);  
-    --grass: rgb(100, 200, 100);   
-    --psychic: rgb(200, 100, 200);  
-    --rock: rgb(150, 100, 50);      
-    --dark: rgb(100, 80, 60);       
-    --ground: rgb(150, 150, 100);   
-    --poison: rgb(150, 100, 150);   
-    --flying: rgb(100, 130, 180);   
+    --steel: rgb(150, 150, 170);
+    --water: rgb(100, 149, 237);
+    --bug: rgb(100, 130, 100);
+    --dragon: rgb(200, 100, 100);
+    --electric: rgb(255, 255, 150);
+    --ghost: rgb(150, 120, 120);
+    --fire: rgb(255, 165, 80);
+    --fairy: rgb(230, 100, 150);
+    --ice: rgb(180, 180, 230);
+    --fighting: rgb(150, 50, 50);
+    --normal: rgb(150, 150, 150);
+    --grass: rgb(100, 200, 100);
+    --psychic: rgb(200, 100, 200);
+    --rock: rgb(150, 100, 50);
+    --dark: rgb(100, 80, 60);
+    --ground: rgb(150, 150, 100);
+    --poison: rgb(150, 100, 150);
+    --flying: rgb(100, 130, 180);
 }
 
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Hanalei Fill", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    color: white;
 }
 
-nav{
-    background-color: var(--fire);
+
+
+body {
+    background-image: url(https://i.gifer.com/J3tz.gif);
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
     margin-bottom: 30px;
 }
 
-.carta{
+.carta {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,13 +52,17 @@ nav{
 }
 
 
-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    width: 70%;}
+.principal {
 
-#tarjeta_principal{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+#tarjeta_principal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,53 +73,99 @@ main{
     align-self: center;
 }
 
-#tarjeta_principal img{
+#tarjeta_principal img {
     width: 200px;
     height: 200px;
 }
 
-#tipos{
+#pokemon {
+    image-rendering: pixelated;
+}
+
+#num_pokemon {
+    font-size: 3rem;
+}
+
+#tipos {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+    text-align: center;
+}
+#name{
+    font-size: 3rem;
+}
+#tipo {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    gap:3px;
 }
 
-#tipos h1{
+#tipos h1 {
     text-align: center;
     margin-top: 10px;
-} 
+}
 
-.estat{
+.estat {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 .status-bar {
     width: 100%;
     height: 20px;
-    background-color: #c5b8b8; 
-    border-radius: 5px; 
-    overflow: hidden; 
-    border:1px solid gray;
+    background-color: #c5b8b8;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid gray;
     align-self: center;
 }
-.status-bar-color {
-    height: 100%;
-    width: 0; 
-    transition: width 0.5s; 
+
+.status-text {
+    font-size: 1.2rem;
 }
 
-#boton, #boton_debilidad{
-    border:none;
+.status-bar-color {
+    height: 100%;
+    width: 0;
+    transition: width 0.5s;
+}
+
+#boton,
+#boton_debilidad {
+    border: none;
     width: 200px;
     padding: 10px;
     border-radius: 10px;
+    font-size: 1.2rem;
 }
 
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.botones h3 {
+    font-size: 1.2rem;
+}
 
 /* media queries */
-@media(max-width:500px){
-    #boton, #boton_debilidad{
+@media(max-width:500px) {
+
+    #boton,
+    #boton_debilidad {
         margin-bottom: 5px;
- }
+    }
 }
