@@ -162,10 +162,18 @@ nav {
 }
 
 /* media queries */
-@media(max-width:500px) {
+@media(max-width:1450px) {
 
     #boton,
     #boton_debilidad {
-        margin-bottom: 5px;
+        margin: 2px;
     }
+}
+
+@media(max-width:425px) {
+
+#tipo {
+    display: flex;
+    flex-direction: column;
+}
 }
