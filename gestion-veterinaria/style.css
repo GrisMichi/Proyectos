@@ -5,23 +5,38 @@
      font-family: "Delius", cursive;
      font-weight: 400;
      font-style: normal;
+     color: #242E47;
+
  }
 
  body {
      font-family: Arial, sans-serif;
-     background-color: #f4f4f4;
+     background-color: #EDEDEF;
      margin: 0;
      padding: 0;
+     
  }
 
 
  .container {
-     background-color: rgb(147, 193, 252);
+     background-color: #A9C5B9;
      padding: 20px;
      margin-top: 20px;
      border-radius: 8px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      justify-self: center;
+
+ }
+
+.btn-primary{
+    background-color:#1BBCB6;
+    border: none;
+}
+
+
+ .appointment-button:hover, .btn-primary:hover,  .appointment-button:active, .btn-primary:active{
+    background-color: #158d89;
+    border-radius: 2px;
  }
 
 
@@ -31,6 +46,7 @@
      align-items: center;
      margin-bottom: 20px;
      gap: 50px;
+     
  }
 
 
@@ -58,7 +74,7 @@
 
 
  .search-bar button {
-     background-color: #5cb85c;
+     background-color: #1BBCB6;
      color: white;
      padding: 8px 12px;
      border-radius: 4px;
@@ -67,11 +83,12 @@
 
 
  .appointment-button button {
-     background-color: #007bff;
+     background-color: #1BBCB6;
      color: white;
      padding: 10px 15px;
      border-radius: 4px;
      cursor: pointer;
+     border: none;
  }
 
 
@@ -96,17 +113,22 @@
      padding-left: 10px;
  }
 
+ .modal-content{
+    background-color: #A9C5B9;
+ }
 
  .card {
      width: calc(33.33% - 20px);
      margin: 0;
      border-radius: 8px;
      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     background-color: #A9C5B9;
  }
 
 
  .card-body {
      padding: 15px;
+     text-align: center;
  }
 
 
@@ -129,9 +151,11 @@
      height: 150px;
      align-self: center;
      object-fit: cover;
-     border-top-left-radius: 8px;
-     border-top-right-radius: 8px;
+     border-radius: 50%;
      image-rendering: pixelated;
+     border: 6px solid #1BBCB6;
+     margin-top: 10px;
+     background-color: #EDEDEF;
  }
 
 
@@ -144,19 +168,28 @@
      margin-top: 10px;
  }
 
+  .btn-warning:hover{
+    background-color: #158d89;
+  }
 
  .btn-warning {
-     background-color: #f0ad4e;
+     background-color: #1BBCB6;
      color: white;
      margin-right: 5px;
  }
 
 
  .btn-danger {
-     background-color: #d9534f;
+     background-color: #D16D79;
      color: white;
  }
 
+.modal-footer{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
 
  /* Media queries for responsiveness */
  @media (max-width: 992px) {

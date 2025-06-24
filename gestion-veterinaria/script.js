@@ -53,7 +53,7 @@ function guardar() {
         saveData();
         pintar();
         limpiar();
-        closeModal('exampleModal'); 
+        cerrarModal('exampleModal'); // Cerrar el modal después de guardar
     }
 }
 
