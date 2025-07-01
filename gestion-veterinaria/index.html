@@ -59,22 +59,27 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Registro de datos</h1>
+                        <h1 class="modal-title fs-5 negrita" id="exampleModalLabel">Registro de datos</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
                         <div style="display: flex; flex-direction: column; gap: 20px; padding: 10px;">
-                            <input type="text" id="numero" placeholder="Número de la cita" disabled>
-                            <input type="text" id="nombre" placeholder="Nombre de la mascota" required>
-                            <input type="text" id="nombred" placeholder="Nombre del propietario" required>
+                            <input type="text" id="numero" placeholder="El número de la cita quedará aquí" disabled>
+                            <label for="nombre">Nombre de la mascota</label>
+                            <input type="text" id="nombre" placeholder="Firulais" required>
+                            <label for="nombred">Nombre del propietario</label>
+                            <input type="text" id="nombred" placeholder="Fulanito Detal" required>
+                            <label for="telefono">Teléfono</label>
                             <input type="text" id="telefono" placeholder="Teléfono" required pattern="\d+"
                                 title="Solo números">
+                            <label for="fecha">Fecha de la cita</label>
                             <input type="date" id="fecha" required>
+                            <label for="hora">Hora de la cita</label>
                             <input type="time" id="hora" required>
 
-
+                            <label for="tipo">Tipo de mascota</label>
                             <select id="tipo" required>
-                                <option value="">Seleccionar el tipo</option>
+                                <option value="">Seleccionar tipo</option>
                                 <option value="Perro">Perro</option>
                                 <option value="Gato">Gato</option>
                                 <option value="Mariposa">Mariposa</option>
@@ -85,15 +90,14 @@
                                 <option value="Tarantula">Tarántula</option>
                                 <option value="Vaca">Vaca</option>
                                 <option value="Cerdo">Cerdo</option>
-                                <option value="Otro">Otro</option>
                             </select>
 
-
+                            <label for="sintomas">Síntomas</label>
                             <textarea id="sintomas"
-                                placeholder="Escriba los síntomas de su mascota en máximo 400 caracteres"
+                                placeholder="Tiene dolor de cabeza..."
                                 maxlength="400" required></textarea>
 
-
+                            <label for="estado">Estado de la cita</label>
                             <select id="estado" class="form-select" required>
                                 <option value="Abierta">Abierta</option>
                                 <option value="Terminada">Terminada</option>
