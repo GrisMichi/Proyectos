@@ -32,7 +32,6 @@
         <div class="header">
             <div class="search-bar">
                 <input type="text" id="search" placeholder="Buscar mascota o propietario...">
-                <button onclick="buscar()"><i class="fas fa-search"></i></button>
             </div>
 
             <div class="filter-container">
@@ -60,7 +59,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5 negrita" id="exampleModalLabel">Registro de datos</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="limpiar()"></button>
                     </div>
                     <div class="modal-body">
                         <div style="display: flex; flex-direction: column; gap: 20px; padding: 10px;">
@@ -106,8 +105,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="save" onclick="guardar()">Guardar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="limpiar()">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="save" onclick="guardar()" >Guardar</button>
                     </div>
                 </div>
             </div>

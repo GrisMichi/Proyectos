@@ -178,7 +178,7 @@ function validaciones() {
     const hora = document.getElementById("hora").value;
 
 
-    if (!document.getElementById("nombre").value) {
+    if (!document.getElementById("nombre").value.trim()) {
         Swal.fire({
             title: "Faltan datos",
             text: "Debe ingresar el nombre de la mascota",
@@ -186,7 +186,7 @@ function validaciones() {
         });
         return false;
     }
-    if (!document.getElementById("nombred").value) {
+    if (!document.getElementById("nombred").value.trim()) {
         Swal.fire({
             title: "Faltan datos",
             text: "Debe ingresar el nombre del propietario",
