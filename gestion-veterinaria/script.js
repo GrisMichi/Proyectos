@@ -168,6 +168,9 @@ function limpiar() {
     document.getElementById("tipo").value = "";
     document.getElementById("sintomas").value = "";
     document.getElementById("estado").value = "Abierta";
+
+    op = 0;
+    pos = null;
 }
 
 
